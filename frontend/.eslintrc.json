@@ -1,0 +1,18 @@
+{
+  "extends": ["react-app"],
+  "plugins": ["simple-import-sort"],
+  "rules": {
+    "simple-import-sort/sort": "error",
+    "sort-imports": "off",
+    "import/order": "off"
+  },
+  "overrides": [
+    {
+      "files": "server.js",
+      "rules": {
+        "simple-import-sort/sort": "off",
+        "import/order": ["error", { "newlines-between": "always" }]
+      }
+    }
+  ]
+}
