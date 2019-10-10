@@ -27,6 +27,7 @@
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "dev": "nodemon src/",
     "start": "node src/",
+    "pm2": "pm2 start src/ --name tgfi-control-backend",
     "mocha": "mocha test/ --recursive --exit"
   },
   "dependencies": {
