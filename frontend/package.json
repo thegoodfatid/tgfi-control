@@ -13,7 +13,7 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "serve": "NODE_ENV=production node server.js",
     "pm2": "NODE_ENV=production pm2 start server.js --name tgfi-control-frontend",
