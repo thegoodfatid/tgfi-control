@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@feathersjs/authentication-client": "^4.3.5",
+    "@feathersjs/feathers": "^4.3.4",
+    "@feathersjs/socketio-client": "^4.3.5",
     "@loadable/component": "^5.10.3",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
@@ -18,14 +21,15 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^2.3.0"
   },
   "scripts": {
     "analyze": "react-scripts build && source-map-explorer 'build/static/js/*.js'",
     "dev": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
-    "serve": "NODE_ENV=production node server.js",
-    "pm2": "NODE_ENV=production pm2 start server.js --name tgfi-control-frontend",
+    "serve": "node server.js",
+    "pm2": "pm2 start server.js --name tgfi-control-frontend",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
